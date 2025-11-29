@@ -10,7 +10,7 @@ function strip(article){
 	return words.join(" ");
 }
 const sorted = bands.sort((a,b)=> strip(a).localeCompare(strip(b)));
-const ul = document.getElementById("band");
+const ul = document.getElementById("bands");
 sorted.forEach(item => {
 	let li = document.createElement("li");
 	li.textContent = item;
